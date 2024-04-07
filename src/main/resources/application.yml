@@ -1,0 +1,18 @@
+spring:
+  profiles:
+    active: secret
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url:
+    username:
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
